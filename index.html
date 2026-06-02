@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yvy - Inteligência Agrícola</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            
+            <a href="#inicio" class="brand">
+                <img src="Yvy.jpg" alt="Logo Yvy" class="brand-logo-img" onerror="this.style.display='none'">
+                <span class="brand-text">yvy</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">O que é?</a>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#equipe">Equipe</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="[INSERIR_LINK_DO_PAINEL_AQUI]" target="_blank" rel="noopener noreferrer" class="btn-text">
+                    <i data-lucide="external-link"></i> Acessar Painel
+                </a>
+                <a href="#contato" class="btn btn-magenta">Fale Conosco</a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">O que é?</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#equipe">Equipe</a>
+            <a href="[INSERIR_LINK_DO_PAINEL_AQUI]" target="_blank" class="btn-text" style="justify-content: center; margin-top: 1rem;">
+                <i data-lucide="external-link"></i> Acessar Painel
+            </a>
+            <a href="#contato" class="btn btn-magenta" style="display: block; text-align: center; margin-top: 1rem;">Fale Conosco</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero dotted-bg">
+            <div class="container hero-container">
+                
+                <div class="hero-content reveal">
+                    <div class="badge">
+                        <span class="pulse-dot"></span> Inteligência Agrícola
+                    </div>
+                    <h1 class="title">A tecnologia a favor da sua <span class="text-green">terra</span></h1>
+                    <p class="subtitle">O software do Yvy processa dados de sensores de campo via modelos preditivos de IA, gerando um Score de saúde preciso para guiar suas decisões de manejo.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#como-funciona" class="btn btn-green">Conheça a Plataforma</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal delay-200">
+                    <div class="mockup-window">
+                        <div class="mockup-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="mockup-body">
+                            <i data-lucide="layout-dashboard" class="mockup-icon"></i>
+                            <h4>[INSERIR_IMAGEM_DO_DASHBOARD]</h4>
+                            <p>Substitua esta div pela sua tag &lt;img src="..."&gt;</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="title">A essência está no <span class="text-magenta">Software</span></h2>
+                    <p class="subtitle">Os sensores de hardware são coletores, mas a verdadeira transformação do Yvy roda em nuvem através da nossa inteligência artificial.</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card reveal delay-100">
+                        <div class="card-icon icon-green">
+                            <i data-lucide="activity"></i>
+                        </div>
+                        <h3>Monitoramento Contínuo</h3>
+                        <p>O fluxo de dados ininterrupto alimenta a nuvem para manter o painel atualizado a cada variação climática ou do solo.</p>
+                    </div>
+
+                    <div class="card reveal delay-200">
+                        <div class="card-icon icon-magenta">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3>Ações Práticas via IA</h3>
+                        <p>Nossa inteligência converte dados químicos e físicos densos em instruções claras de manejo imediato para a sua equipe.</p>
+                    </div>
+
+                    <div class="card card-dark reveal delay-300">
+                        <div class="card-icon icon-white">
+                            <i data-lucide="sprout"></i>
+                        </div>
+                        <h3>Culturas Nativas</h3>
+                        <p>Modelos perfeitamente calibrados para as necessidades de culturas como <strong>Açaí</strong>, <strong>Mandioca</strong> e <strong>Pastagem Regenerativa</strong>.</p>
+                        <i data-lucide="leaf" class="bg-watermark"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="section bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="title">A Jornada do Dado</h2>
+                    <p class="subtitle">Entenda como transformamos a leitura da terra em produtividade real.</p>
+                </div>
+
+                <div class="grid-4">
+                    <div class="step-card reveal delay-100">
+                        <div class="step-number">1</div>
+                        <h4>Coleta</h4>
+                        <p>Sensores externos registram os níveis de umidade e condutividade do lote.</p>
+                    </div>
+
+                    <div class="step-card reveal delay-200">
+                        <div class="step-number">2</div>
+                        <h4>Análise IA</h4>
+                        <p>A inteligência processa as curvas de Nitrogênio, Fósforo e Potássio.</p>
+                    </div>
+
+                    <div class="step-card step-highlight reveal delay-300">
+                        <div class="step-number highlight">3</div>
+                        <h4>Geração de Score</h4>
+                        <p>O Yvy unifica as métricas, gerando uma nota direta sobre a saúde da terra.</p>
+                    </div>
+
+                    <div class="step-card reveal delay-400">
+                        <div class="step-number">4</div>
+                        <h4>Manejo</h4>
+                        <p>A plataforma exibe recomendações precisas, como uso de Biochar ou Cobertura.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="title">Quem planta esta ideia</h2>
+                    <p class="subtitle">Conheça as mentes por trás da nossa inteligência agrícola.</p>
+                </div>
+
+                <div class="grid-3 team-grid">
+                    <div class="team-card reveal delay-100">
+                        <div class="team-photo"><img src="[FOTO_1.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Davi Corrêa</h3>
+                        <span>Líder e Desenvolvedor</span>
+                    </div>
+                    <div class="team-card reveal delay-200">
+                        <div class="team-photo"><img src="[FOTO_2.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Gabriel Alencar</h3>
+                        <span>Desenvolvedor Back-end</span>
+                    </div>
+                    <div class="team-card reveal delay-300">
+                        <div class="team-photo"><img src="[FOTO_3.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Carlos Eduardo Silva</h3>
+                        <span>Desenvolvedor de IA</span>
+                    </div>
+                    <div class="team-card reveal delay-100">
+                        <div class="team-photo"><img src="[FOTO_4.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Ana Paula Amora</h3>
+                        <span>Desenvolvedora Front-End</span>
+                    </div>
+                    <div class="team-card reveal delay-200">
+                        <div class="team-photo"><img src="[FOTO_5.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Ingrid Imbiriba</h3>
+                        <span>Desenvolvedora Front-End</span>
+                    </div>
+                    <div class="team-card reveal delay-300">
+                        <div class="team-photo"><img src="[FOTO_6.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Alberto Acosta</h3>
+                        <span>QA</span>
+                    </div>
+                    <div class="team-card reveal delay-100">
+                        <div class="team-photo"><img src="[FOTO_7.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Maria Eduarda Araújo</h3>
+                        <span>Designer</span>
+                    </div>
+                    <div class="team-card reveal delay-200">
+                        <div class="team-photo"><img src="[FOTO_8.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Geovana Araújo</h3>
+                        <span>Redatora e Pesquisadora</span>
+                    </div>
+                    <div class="team-card reveal delay-300">
+                        <div class="team-photo"><img src="[FOTO_9.jpg]" alt="" onerror="this.style.display='none'"></div>
+                        <h3>Manuela Farias</h3>
+                        <span>Consultora de Sustentabilidade</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section bg-light border-top">
+            <div class="container contact-container">
+                
+                <div class="contact-text reveal">
+                    <h2 class="title">Soluções sob medida para o produtor</h2>
+                    <p class="subtitle">Seja para agricultura familiar ou grandes empresas corporativas, a inteligência do Yvy se adapta à escala da sua lavoura.</p>
+
+                    <div class="feature-row">
+                        <div class="feature-icon"><i data-lucide="users"></i></div>
+                        <div>
+                            <h4>Agricultura Familiar</h4>
+                            <p>Foco total em acessibilidade e suporte prático. Melhore a rentabilidade e garanta a segurança da colheita.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-row">
+                        <div class="feature-icon"><i data-lucide="bar-chart-3"></i></div>
+                        <div>
+                            <h4>Produtores Comerciais</h4>
+                            <p>Controle analítico de alta performance. Exportação avançada de dados e relatórios técnicos completos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal delay-200">
+                    <h3 class="title-small">Inicie sua transformação, adquira o Yvy!</h3>
+                    <p>Nossa equipe técnica responderá com um diagnóstico focado na sua cultura.</p>
+
+                    <form onsubmit="event.preventDefault(); alert('Solicitação enviada!');">
+                        <div class="form-group">
+                            <label>Nome Completo</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Sua Necessidade</label>
+                            <textarea rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-light">SOLICITAR CONTATO</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="brand">
+                <i data-lucide="network" class="text-magenta"></i>
+                <span class="brand-text text-green">yvy</span>
+            </div>
+            <p>© 2026 Yvy. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
