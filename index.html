@@ -31,9 +31,6 @@
             </nav>
 
             <div class="nav-actions">
-                <a href="[INSERIR_LINK_DO_PAINEL_AQUI]" target="_blank" rel="noopener noreferrer" class="btn-text">
-                    <i data-lucide="external-link"></i> Acessar Painel
-                </a>
                 <a href="#contato" class="btn btn-magenta">Fale Conosco</a>
             </div>
 
@@ -47,9 +44,6 @@
             <a href="#sobre">O que é?</a>
             <a href="#como-funciona">Como Funciona</a>
             <a href="#equipe">Equipe</a>
-            <a href="[INSERIR_LINK_DO_PAINEL_AQUI]" target="_blank" class="btn-text" style="justify-content: center; margin-top: 1rem;">
-                <i data-lucide="external-link"></i> Acessar Painel
-            </a>
             <a href="#contato" class="btn btn-magenta" style="display: block; text-align: center; margin-top: 1rem;">Fale Conosco</a>
         </div>
     </header>
@@ -213,53 +207,57 @@
                 </div>
             </div>
         </section>
-
         <section id="contato" class="section bg-light border-top">
             <div class="container contact-container">
                 
+                <!-- Lado Esquerdo: Novo foco em Investidores e Parceiros -->
                 <div class="contact-text reveal">
-                    <h2 class="title">Soluções sob medida para o produtor</h2>
-                    <p class="subtitle">Seja para agricultura familiar ou grandes empresas corporativas, a inteligência do Yvy se adapta à escala da sua lavoura.</p>
-
+                    <h2 class="title">Faça parte do futuro da agricultura</h2>
+                    <p class="subtitle">O Yvy está em fase de MVP. Estamos abertos a conversas com investidores, parceiros estratégicos e entusiastas da tecnologia no agronegócio.</p>
+                    
                     <div class="feature-row">
-                        <div class="feature-icon"><i data-lucide="users"></i></div>
+                        <div class="feature-icon"><i data-lucide="trending-up"></i></div>
                         <div>
-                            <h4>Agricultura Familiar</h4>
-                            <p>Foco total em acessibilidade e suporte prático. Melhore a rentabilidade e garanta a segurança da colheita.</p>
+                            <h4>Para Investidores</h4>
+                            <p>Conheça nosso roadmap, nossos próximos passos e como a inteligência artificial do Yvy pretende escalar e impactar o mercado agro.</p>
                         </div>
                     </div>
-
+                    
                     <div class="feature-row">
-                        <div class="feature-icon"><i data-lucide="bar-chart-3"></i></div>
+                        <div class="feature-icon"><i data-lucide="lightbulb"></i></div>
                         <div>
-                            <h4>Produtores Comerciais</h4>
-                            <p>Controle analítico de alta performance. Exportação avançada de dados e relatórios técnicos completos.</p>
+                            <h4>Dúvidas e Parcerias</h4>
+                            <p>Quer entender melhor a nossa tecnologia, bater um papo com a equipe ou testar a solução no futuro? Vamos conversar.</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Lado Direito: Formulário adaptado para o Formspree -->
                 <div class="contact-form-wrapper reveal delay-200">
-                    <h3 class="title-small">Inicie sua transformação, adquira o Yvy!</h3>
-                    <p>Nossa equipe técnica responderá com um diagnóstico focado na sua cultura.</p>
-
-                    <form onsubmit="event.preventDefault(); alert('Solicitação enviada!');">
+                    <h3 class="title-small">Fale com a nossa equipe</h3>
+                    <p>Deixe sua mensagem abaixo. Retornaremos o mais breve possível para agendar uma conversa.</p>
+                    
+                    <!-- COLE O SEU LINK DO FORMSPREE NO ATRIBUTO ACTION ABAIXO -->
+                    <form action="https://formspree.io/f/xaqzwoez" method="POST">
                         <div class="form-group">
-                            <label>Nome Completo</label>
-                            <input type="text" required>
+                            <label>Nome ou Empresa</label>
+                            <!-- O atributo "name" é essencial para o Formspree identificar o campo -->
+                            <input type="text" name="nome" required>
                         </div>
                         <div class="form-group">
                             <label>E-mail</label>
-                            <input type="email" required>
+                            <input type="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label>Sua Necessidade</label>
-                            <textarea rows="4" required></textarea>
+                            <label>Sua Mensagem</label>
+                            <textarea rows="4" name="mensagem" placeholder="Como você gostaria de colaborar com o Yvy?" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-block btn-light">SOLICITAR CONTATO</button>
+                        <button type="submit" class="btn btn-block btn-light">ENVIAR MENSAGEM</button>
                     </form>
                 </div>
-
+                
             </div>
+        </section>
         </section>
     </main>
 
